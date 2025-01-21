@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimi Dan Pelangi Ajaib</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #9ECFED;
+        }
+        header {
+            background-color: #8AD4DD;
+            text-align: center;
+            padding: 40px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #FFFFFF;
+        }
+        header p {
+            font-size: 18px;
+            margin: 5px 0;
+            color: #FFFFFF;
+        }
+        .navbar {
+            background-color: #096A87;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            position: relative;
+            background: url("MIMI.png") no-repeat center center;
+            background-size: cover;
+        }
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            z-index: 1;
+        }
+        .content h2, .content p, .language-buttons {
+            position: relative;
+            z-index: 2; /* Above the overlay */
+        }
+        .content h2 {
+            font-size: 35px;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #FFFFFF;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .language-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .language-buttons button {
+            background-color: #8AD4DD;
+            border: none;
+            border-radius: 8px;
+            padding: 18px 25px;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-buttons button:hover {
+            background-color: #003A63;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mimi Dan Pelangi Ajaib</h1>
+        <p>✨Selamat datang ke buku cerita kami!✨</p>
+    </header>
+    <div class="navbar">
+        <a href="mimi dan pelangi ajaib.html">Laman Utama</a>
+        <a href="Bahasa.html">Sinopsis</a>
+        <a href="Watak Utama.html">Watak Utama</a>
+    </div>
+    <div class="content">
+        <h2>Selamat Datang Ke Halaman<br>Mimi Dan Pelangi Ajaib!</h2>
+        <p>Hello! Sila pilih bahasa yang anda gemari</p>
+        <div class="language-buttons">
+    <button role="button" onclick="window.location.href='http://localhost/mimidanpelangiajaib/coding/bmstorybook/bmstorybook.html';">Buku<br>Bahasa Melayu</button>
+
+    <button role="button" onclick="window.location.href='http://localhost/mimidanpelangiajaib/coding/bmmapping/index.html';">Peta<br>Bahasa Melayu</button>
+	
+	<button role="button" onclick="window.location.href='http://localhost/mimidanpelangiajaib/coding/bjstorybook/bjstorybook.html';">Buku<br>Bahasa Bajau Ubian</button>
+
+    <button role="button" onclick="window.location.href='http://localhost/mimidanpelangiajaib/coding/bjmapping/index.html';">Peta<br>Bahasa Bajau Ubian</button>
+
+</div>
+
+
+    </div>
+</body>
+</html>
